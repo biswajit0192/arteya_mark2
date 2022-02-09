@@ -25,6 +25,7 @@ body {
   overflow-x: hidden;
   background: white;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ////////// Testing Border ///////////
@@ -85,6 +86,7 @@ p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  opacity: 0;
 
   .top-btn {
     display: flex;

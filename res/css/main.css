@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   background: white;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .border1 {
@@ -73,6 +74,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  opacity: 0;
 }
 
 .top-btn-wrapper .top-btn {
