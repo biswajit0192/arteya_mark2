@@ -10,6 +10,7 @@ $yellow-gradientend: #ff7f31;
 $gray: #aaaaaa;
 $light-gray: #c7c7c7;
 $prime-gray: #7d7d7d;
+$dark-gray: #333333;
 
 /////////// Measurements ///////////
 $section-gap: 200px;
@@ -67,6 +68,43 @@ p {
 .blue-btn {
   background: linear-gradient(180deg, $gradientstart, $gradientend);
   color: white;
+}
+////////// To Top Btn ////////
+.top-btn-wrapper {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  position: fixed;
+  z-index: 100;
+  bottom: 28px;
+  right: 80px;
+  border: 1px solid black;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &:hover{
+    background: $dark-gray;
+    border: 1px solid $dark-gray;
+    .top-btn{
+      svg{
+        fill: white;
+      }
+    }
+  }
 }
 ///////// Home Page //////////
 .cover-sec {

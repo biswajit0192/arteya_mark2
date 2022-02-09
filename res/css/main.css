@@ -52,6 +52,55 @@ p {
   color: white;
 }
 
+.top-btn-wrapper {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  position: fixed;
+  z-index: 100;
+  bottom: 28px;
+  right: 80px;
+  border: 1px solid black;
+  background: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.top-btn-wrapper .top-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-btn-wrapper .top-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.top-btn-wrapper:hover {
+  background: #333333;
+  border: 1px solid #333333;
+}
+
+.top-btn-wrapper:hover .top-btn svg {
+  fill: white;
+}
+
 .cover-sec {
   margin-bottom: 140px;
 }
