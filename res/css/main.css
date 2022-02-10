@@ -61,8 +61,12 @@ p {
   z-index: 100;
   bottom: 28px;
   right: 80px;
-  border: 1px solid black;
-  background: white;
+  border: 1px solid #333333;
+  background-color: white;
+  background-image: radial-gradient(#333333 20%, white 21%, white 100%);
+  background-size: 10% 10%;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +79,9 @@ p {
           align-items: center;
   cursor: pointer;
   opacity: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  overflow: hidden;
 }
 
 .top-btn-wrapper .top-btn {
@@ -87,20 +94,49 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .top-btn-wrapper .top-btn svg {
   width: 24px;
   height: 24px;
+  position: absolute;
+}
+
+.top-btn-wrapper .top-btn #top-arrow {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.top-btn-wrapper .top-btn #bottom-arrow {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .top-btn-wrapper:hover {
-  background: #333333;
-  border: 1px solid #333333;
+  background-size: 400% 400%;
 }
 
 .top-btn-wrapper:hover .top-btn svg {
   fill: white;
+}
+
+.top-btn-wrapper:hover .top-btn #top-arrow {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  opacity: 0;
+}
+
+.top-btn-wrapper:hover .top-btn #bottom-arrow {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .cover-sec {

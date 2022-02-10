@@ -79,34 +79,81 @@ p {
   z-index: 100;
   bottom: 28px;
   right: 80px;
-  border: 1px solid black;
-  background: white;
+  border: 1px solid $dark-gray;
+  background-color: white;
+  background-image: radial-gradient($dark-gray 20%, white 21%, white 100%);
+  background-size: 10% 10%;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   opacity: 0;
+  transition: 300ms;
+  overflow: hidden;
 
   .top-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     svg {
       width: 24px;
       height: 24px;
+      position: absolute;
+    }
+    #top-arrow{
+      transform: translateY(0);
+      opacity: 1;
+      transition: 300ms;
+    }
+    #bottom-arrow{
+      transform: translateY(30px);
+      opacity: 0;
+      transition: 300ms;
     }
   }
 
   &:hover{
-    background: $dark-gray;
-    border: 1px solid $dark-gray;
+    background-size: 400% 400%;
     .top-btn{
       svg{
         fill: white;
       }
+      #top-arrow{
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      #bottom-arrow{
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
   }
+  // @keyframes toTopBtn {
+  //   25%{
+  //     transform: translateY(4px);
+  //     opacity: 0.9;
+  //   }
+  //   50%{
+  //     transform: translateY(8px);
+  //     opacity: 0;
+  //   }
+  //   55%{
+  //     transform: translateY(-8px);
+  //     opacity: 0;
+  //   }
+  //   75%{
+  //     transform: translateY(-4px);
+  //     opacity: 0.1;
+  //   }
+  //   100%{
+  //     transform: translateY(0);
+  //     opacity: 1;
+  //   }
+  // }
 }
 ///////// Home Page //////////
 .cover-sec {
