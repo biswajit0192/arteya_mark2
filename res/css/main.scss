@@ -132,114 +132,91 @@ p {
       }
     }
   }
-  // @keyframes toTopBtn {
-  //   25%{
-  //     transform: translateY(4px);
-  //     opacity: 0.9;
-  //   }
-  //   50%{
-  //     transform: translateY(8px);
-  //     opacity: 0;
-  //   }
-  //   55%{
-  //     transform: translateY(-8px);
-  //     opacity: 0;
-  //   }
-  //   75%{
-  //     transform: translateY(-4px);
-  //     opacity: 0.1;
-  //   }
-  //   100%{
-  //     transform: translateY(0);
-  //     opacity: 1;
-  //   }
-  // }
 }
-///////// Home Page //////////
-.cover-sec {
-  margin-bottom: $cover-bottom-gap;
-  .header {
-    padding-top: 30px;
-    transform: translateY(-200px);
-    animation: header-ani 1700ms;
-    animation-fill-mode: forwards;
 
-    @keyframes header-ani {
-      100% {
-        transform: translateY(0);
-      }
+/// Mobile-menu-icon ///
+.menu-icon-div {
+  display: none;
+}
+.mobile-menu-div {
+  display: none;
+}
+.mobile-menu-div {
+  display: none;
+}
+
+/////// Site Header ///////
+.header {
+  padding-top: 30px;
+  transform: translateY(-200px);
+  animation: header-ani 1700ms;
+  animation-fill-mode: forwards;
+
+  @keyframes header-ani {
+    100% {
+      transform: translateY(0);
     }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      .logo-div {
-        .logo-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .logo-div {
+      .logo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-          svg {
-            width: 37px;
-            margin-right: 8px;
-          }
-          h2 {
-            color: black;
-          }
-          #logo-text {
-            font-size: 1.4em;
-            font-weight: 700;
-          }
+        svg {
+          width: 37px;
+          margin-right: 8px;
+        }
+        h2 {
+          color: black;
+        }
+        #logo-text {
+          font-size: 1.4em;
+          font-weight: 700;
         }
       }
+    }
 
-      .menu-div {
-        display: flex;
-        align-items: flex-end;
-        font-family: "Lato", sans-serif;
+    .menu-div {
+      display: flex;
+      align-items: flex-end;
+      font-family: "Lato", sans-serif;
 
-        .menu-wrapper {
-          ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            transition: $hover-transition;
+      .menu-wrapper {
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          transition: $hover-transition;
 
-            &:hover {
-              opacity: 0.3;
-            }
+          li {
+            //   margin: 0 20px;
+            //   margin-left: 38px;
 
-            li {
-              //   margin: 0 20px;
-              //   margin-left: 38px;
+            a {
+              font-weight: 600;
+              color: $gray;
+              transition: 300ms;
+              padding: 0 19px;
 
-              a {
-                font-weight: 600;
-                color: $gray;
-                transition: 300ms;
-                padding: 0 19px;
-
-                &:hover {
-                  color: $prime;
-                  opacity: 1;
-                }
+              &:hover {
+                color: $prime;
+                opacity: 1;
               }
             }
           }
         }
       }
-      /// Mobile-menu-icon ///
-      .menu-icon-div {
-        display: none;
-      }
-      .mobile-menu-div {
-        display: none;
-      }
     }
   }
+}
 
-  .mobile-menu-div {
-    display: none;
-  }
+///////// Home Page //////////
+.cover-sec {
+  margin-bottom: $cover-bottom-gap;
 
   .cover-wrapper {
     margin-top: 70px;
@@ -748,6 +725,92 @@ footer {
   }
 }
 
+.testimonial-sec{
+  margin-bottom: 130px;
+  .testimonial-wrapper{
+    .heading-wrap{
+      .sub-heading{text-align: center;}
+      h2{text-align: center;}
+    }
+
+    .testi-cards-wrapper{
+      width: 100%;
+      padding: 55px 0;
+      display: flex;
+      justify-content: center;
+
+      .center-card{
+        opacity: 1 !important;
+      }
+      .testi-cards{
+        width: 450px;
+        margin: 0 40px;
+        opacity: 0.1;
+
+        .img-div{
+          display: flex;
+          justify-content: center;
+          position: relative;
+
+          #yellow-triangle{
+            position: absolute;
+            left: 30%;
+            width: 9%;
+            transform: rotate(80deg);
+          }
+          #blue-circle{
+            position: absolute;
+            left: 60%;
+            top: 15px;
+            width: 9%;
+            z-index: 2;
+          }
+          #green-circle{
+            position: absolute;
+            z-index: 2;
+            bottom: 4px;
+            left: 39%;
+          }
+
+          .testi-profile-img{
+            width: 110px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+          }
+        }
+        .testi-name{
+          position: relative;
+          #testi-quotes{
+            position: absolute;
+            left: 16px;
+          }
+          h2{
+            text-align: center;
+            margin-bottom: 0;
+          }
+          p{
+            text-align: center;
+            margin: 0;
+            color: $prime-gray;
+            text-transform: uppercase;
+          }
+        }
+        .testi-content{
+          p{
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .bottom-testi-border{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
 .client-logos {
   margin-bottom: 140px;
   .client-logo-wrapper {
@@ -771,6 +834,54 @@ footer {
 //////////////////////////////////////////
 /////////////// About Page ///////////////
 //////////////////////////////////////////
+
+.about-top-sec{
+  margin-bottom: $section-gap;
+}
+.about-top-wrapper{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 100px;
+
+
+  p{
+    span{
+      color: $prime;
+      font-weight: 600;
+    }
+  }
+
+  .img-grid{
+    position: relative;
+    padding-right: 70px;
+    #about-cover{
+      width: 88%;
+      margin-top: 80px;
+    }
+    #about-cover-bg{
+      position: absolute;
+      width: 90%;
+      left: -10%;
+      z-index: -1;
+      // top: -10%;
+    }
+    #about-cover-laptop{
+      position: absolute;
+      bottom: -10%;
+      right: 3%;
+    }
+    #about-cover-plant{
+      position: absolute;
+      width: 18%;
+      bottom: -13%;
+      left: 5%;
+    }
+  }
+
+  .content-grid{
+    padding: 0 60px;
+  }
+}
 
 //////////////////////////////////////////
 /////////////// Service Page ///////////////
