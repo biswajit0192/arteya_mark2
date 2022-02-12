@@ -843,7 +843,6 @@ footer {
   grid-template-columns: 60% 40%;
   margin-top: 100px;
 
-
   p{
     span{
       color: $prime;
@@ -883,9 +882,160 @@ footer {
   }
 }
 
+.client-sec{
+  margin-bottom: 170px;
+  .client-wrapper{
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    .client-content-wrap{
+      padding-right: 100px;
+    }
+
+    .client-logos-wrap{
+      padding-left: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
 //////////////////////////////////////////
 /////////////// Service Page ///////////////
 //////////////////////////////////////////
+
+//////////////////////////////////////////
+/////////////// Contact Page /////////////
+//////////////////////////////////////////
+
+.contact-top-sec{
+  margin-bottom: $section-gap;
+}
+.contact-top-wrapper{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 100px;
+  position: relative;
+
+  #yellow-triangle{
+    position: absolute;
+    right: 50%;
+    top: 10%;
+  }
+  #blue-circle{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+  }
+  #green-circle{
+    position: absolute;
+    right: 13%;
+    top: -10%;
+  }
+  p{
+    span{
+      color: $prime;
+      font-weight: 600;
+    }
+  }
+
+  .img-grid{
+    position: relative;
+    padding-right: 70px;
+    z-index: -1;
+    
+    #contact-bg{
+      position: absolute;
+      top: -40%;
+      z-index: -1;
+    }
+    #contact-man{
+      position: absolute;
+      bottom: -36%;
+      left: 6%;
+      z-index: -1;
+    }
+  }
+
+  .content-grid{
+    .contact-details{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 70px;
+      row-gap: 10px;
+
+      .contact-grid{
+        // padding-right: 30px;
+      }
+    }
+  }
+
+  .content-grid{
+    padding: 0 60px;
+  }
+}
+
+.get-in-touch{
+  margin-bottom: $section-gap;
+  margin-top: 300px;
+  .contact-body-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .heading-wrap{
+      p{
+        width: 80%;
+      }
+    }
+
+    .contact-body-grid{
+      width: 100%;
+      .contact-form-wrapper{
+        padding: 45px 45px 60px 45px;
+        border-radius: 40px;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(238, 244, 255, 0.64) 100%);
+
+        form{
+          width: 100%;
+          input{
+            padding: 25px;
+            font-weight: 500;
+            width: 91.4%;
+            border-radius: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2em;
+            border: 1px solid rgba(0, 0, 0, 0.13);
+            font-family: "Roboto", sans-serif;
+          }
+          textarea{
+            padding: 25px;
+            font-weight: 500;
+            width: 91.4%;
+            border-radius: 40px;
+            line-height: 1.2em;
+            border: 1px solid rgba(0, 0, 0, 0.13);
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 30px;
+            max-width: 100%;
+            overflow-y: hidden;
+          }
+          .submit-btn-div{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            #submit{
+              width: 180px;
+              padding: 20px 0;
+              background-image: linear-gradient(180deg, $gradientstart, $gradientend);
+              border: none;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 //////////////////////////////////////////////
 //////////////////////////////////////////////
