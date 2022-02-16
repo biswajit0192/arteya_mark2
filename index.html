@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!-- To Top Btn -->
@@ -24,6 +27,7 @@
             <svg id="top-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="transform: msFilter;"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
             <svg id="bottom-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="transform: msFilter;"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
         </div>
+        
     </div>
 
     <section class="cover-sec" id="cover">
@@ -105,9 +109,9 @@
                             <li><a class="active-menu" href="">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="">Services</a></li>
-                            <li><a href="">Pricing</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
                             <li><a href="">Our Works</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -130,11 +134,11 @@
                 <ul class="mob-menu border1">
                     <div>
                         <li><a class="active-menu" href="">Home</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="">Services</a></li>
-                        <li><a href="">Pricing</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="">Our Works</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </div>
                 </ul>
             </div>
@@ -143,7 +147,22 @@
 
         <div class="cover-wrapper">
             <div class="cover-content-wrap border1">
-                <h1>a single solution <br>to marketing, it</h1>
+                <div class="home-cover-heading-wrap">
+                    <h1>a single solution to</h1>
+                    
+                    <!-- heading animation -->
+                    <div class="heading-animation-wrap">
+                        <!-- <h1>to</h1> -->
+                        <ul class="cover-heading-changing">
+                            <li><span>Digital Marketing</span></li>
+                            <li><span>It Services</span></li>
+                            <li><span>Manpower Services</span></li>
+                            <li><span>BPO Services</span></li>
+                            <li><span>Data Management</span></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <p>Atreya Associates points to building great computerized arrangements by providing IT Solutions, Digital Marketing, Manpower administrations, BPO administrations, Data Management, and Voice answers for engaging and setting up a Brand New Destination of Digital presence of the possible clients.</p>
                 <div class="cover-btn">
                     <a class="blue-btn" href="">Know More</a>
@@ -348,8 +367,8 @@
                 <h2 class="heading">What Constomers Says</h2>
             </div>
 
-            <div class="testi-cards-wrapper border1">
-                <div class="testi-cards border1">
+            <div class="testi-cards-wrapper testi-slider border1">
+                <div class="testi-cards">
                     <div class="img-div">
                         <svg id="yellow-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.056" height="40.227" viewBox="0 0 43.056 40.227"><defs><linearGradient id="linear-gradient-polygon" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ff7f31"></stop><stop offset="1" stop-color="#ffd25f"></stop></linearGradient></defs><path id="Polygon_3" data-name="Polygon 3" d="M18,0,36,32H0Z" transform="matrix(-0.966, -0.259, 0.259, -0.966, 34.773, 40.227)" fill="url(#linear-gradient-polygon)"></path></svg>
                         <svg id="blue-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.091" height="44.091" viewBox="0 0 44.091 44.091"><defs><linearGradient id="linear-gradient-circle-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#054fc4"></stop><stop offset="1" stop-color="#3482ff"></stop></linearGradient></defs><circle id="Ellipse_8" data-name="Ellipse 8" cx="18" cy="18" r="18" transform="matrix(-0.966, -0.259, 0.259, -0.966, 34.773, 44.091)" fill="url(#linear-gradient-circle-2)"></circle></svg>
@@ -366,7 +385,7 @@
                     </div>
                 </div>
 
-                <div class="testi-cards center-card">
+                <div class="testi-cards">
                     <div class="img-div">
                         <svg id="yellow-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.056" height="40.227" viewBox="0 0 43.056 40.227"><defs><linearGradient id="linear-gradient-polygon" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ff7f31"></stop><stop offset="1" stop-color="#ffd25f"></stop></linearGradient></defs><path id="Polygon_3" data-name="Polygon 3" d="M18,0,36,32H0Z" transform="matrix(-0.966, -0.259, 0.259, -0.966, 34.773, 40.227)" fill="url(#linear-gradient-polygon)"></path></svg>
                         <svg id="blue-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.091" height="44.091" viewBox="0 0 44.091 44.091"><defs><linearGradient id="linear-gradient-circle-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#054fc4"></stop><stop offset="1" stop-color="#3482ff"></stop></linearGradient></defs><circle id="Ellipse_8" data-name="Ellipse 8" cx="18" cy="18" r="18" transform="matrix(-0.966, -0.259, 0.259, -0.966, 34.773, 44.091)" fill="url(#linear-gradient-circle-2)"></circle></svg>
@@ -427,20 +446,20 @@
     <section class="client-logos">
         <div class="prime-container client-logo-wrapper">
             <div class="logo-wraps">
-                <img src="./res/img/Group-165.png" alt="">
+                <img src="./res/img/bpcl.jpg" alt="">
             </div>
             <div class="logo-wraps">
+                <img src="./res/img/gail.png" alt="">
+            </div>
+            <div class="logo-wraps">
+                <img src="./res/img/hpcl.jpg" alt="">
+            </div>
+            <div class="logo-wraps">
+                <img src="./res/img/iocl.png" alt="">
+            </div>
+            <!-- <div class="logo-wraps">
                 <img src="./res/img/Group-166.png" alt="">
-            </div>
-            <div class="logo-wraps">
-                <img src="./res/img/Group-167.png" alt="">
-            </div>
-            <div class="logo-wraps">
-                <img src="./res/img/Group-165.png" alt="">
-            </div>
-            <div class="logo-wraps">
-                <img src="./res/img/Group-166.png" alt="">
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -538,11 +557,25 @@
                         <h2>Menu</h2>
                         <ul>
                             <li><a class="footer-active-link" href="">Home</a></li>
-                            <li><a href="">About</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="">Services</a></li>
-                            <li><a href="">Pricing</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
                             <li><a href="">Our Works</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-links footer-services">
+                    <div>
+                        <h2>Services</h2>
+                        <ul>
+                            <li><a href="">IT Solutions</a></li>
+                            <li><a href="">Digital Marketing</a></li>
+                            <li><a href="">Data Management</a></li>
+                            <li><a href="">BPO Services</a></li>
+                            <li><a href="">Manpower Services</a></li>
+                            <li><a href="">Voice Solutions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -565,6 +598,23 @@
     </footer>
 
     <script src="./res/js/main.js"></script>
+
+    <!-- Slider Cdns -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $('.testi-slider').slick({
+            centerMode: true,
+            slidesToShow: 1,
+            slideToScroll: 1,
+            infinity: true,
+            variableWidth: true,
+            // arrows: false,
+            prevArrow: '<span class="priv-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg></span>',
+            nextArrow: '<span class="next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg></span>',
+        });
+    </script>
     
 </body>
 </html>
