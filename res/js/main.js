@@ -41,25 +41,25 @@ topBtn.addEventListener('click', () => {
 // console.log(window.pageYOffset);
 
 //////////////////// Services Expand Box ///////////////////////
-let serviceBox1 = document.getElementById('service-box1');
-let serviceBox2 = document.getElementById('service-box2');
-let serviceBox3 = document.getElementById('service-box3');
+// let serviceBox1 = document.getElementById('service-box1');
+// let serviceBox2 = document.getElementById('service-box2');
+// let serviceBox3 = document.getElementById('service-box3');
 
-serviceBox1.addEventListener('click', () => {
-    serviceBox1.classList.toggle('ex-box-open')
-    serviceBox2.classList.remove('ex-box-open')
-    serviceBox3.classList.remove('ex-box-open')
-})
-serviceBox2.addEventListener('click', () => {
-    serviceBox2.classList.toggle('ex-box-open')
-    serviceBox1.classList.remove('ex-box-open')
-    serviceBox3.classList.remove('ex-box-open')
-})
-serviceBox3.addEventListener('click', () => {
-    serviceBox3.classList.toggle('ex-box-open')
-    serviceBox1.classList.remove('ex-box-open')
-    serviceBox2.classList.remove('ex-box-open')
-})
+// serviceBox1.addEventListener('click', () => {
+//     serviceBox1.classList.toggle('ex-box-open')
+//     serviceBox2.classList.remove('ex-box-open')
+//     serviceBox3.classList.remove('ex-box-open')
+// })
+// serviceBox2.addEventListener('click', () => {
+//     serviceBox2.classList.toggle('ex-box-open')
+//     serviceBox1.classList.remove('ex-box-open')
+//     serviceBox3.classList.remove('ex-box-open')
+// })
+// serviceBox3.addEventListener('click', () => {
+//     serviceBox3.classList.toggle('ex-box-open')
+//     serviceBox1.classList.remove('ex-box-open')
+//     serviceBox2.classList.remove('ex-box-open')
+// })
 
 // var path = window.location.pathname;
 // var page = path.split("/").pop();
