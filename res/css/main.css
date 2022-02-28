@@ -49,6 +49,11 @@ p {
   color: white;
 }
 
+.blue-btn:hover {
+  -webkit-box-shadow: 0 18px 30px 0px rgba(0, 98, 255, 0.155);
+          box-shadow: 0 18px 30px 0px rgba(0, 98, 255, 0.155);
+}
+
 .top-btn-wrapper {
   width: 30px;
   height: 30px;
@@ -2656,11 +2661,11 @@ footer .footer-copy-right p {
     padding: 0 0;
   }
   .home-services .home-services-wrapper .HMservice-cards-wrapper .card-slider-wrap .priv-arrow {
-    bottom: -20px;
+    bottom: -35px;
     left: 35%;
   }
   .home-services .home-services-wrapper .HMservice-cards-wrapper .card-slider-wrap .next-arrow {
-    bottom: -20px;
+    bottom: -35px;
     right: 35%;
   }
   .feature-sec,
@@ -2759,11 +2764,11 @@ footer .footer-copy-right p {
   }
   .testimonial-sec .testimonial-wrapper .testi-cards-wrapper .priv-arrow {
     top: unset;
-    bottom: 15%;
+    bottom: 5%;
   }
   .testimonial-sec .testimonial-wrapper .testi-cards-wrapper .next-arrow {
     top: unset;
-    bottom: 15%;
+    bottom: 5%;
   }
   .testimonial-sec .testimonial-wrapper .bottom-testi-border .testi-border-wrap svg {
     width: 100%;

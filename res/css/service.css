@@ -49,6 +49,11 @@ p {
   color: white;
 }
 
+.blue-btn:hover {
+  -webkit-box-shadow: 0 18px 30px 0px rgba(0, 98, 255, 0.155);
+          box-shadow: 0 18px 30px 0px rgba(0, 98, 255, 0.155);
+}
+
 .top-btn-wrapper {
   width: 30px;
   height: 30px;
@@ -529,7 +534,7 @@ footer .footer-copy-right p {
 
 .main-service-sec {
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 140px;
 }
 
 .main-service-sec .heading-wrap {
@@ -672,5 +677,82 @@ footer .footer-copy-right p {
   position: absolute;
   width: 120%;
   top: -30px;
+}
+
+.workFlow-sec {
+  margin-bottom: 140px;
+}
+
+.workFlow-sec .work-flow-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-service-body {
+  margin-bottom: 200px;
+}
+
+.main-service-body .main-service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-service-body .main-service-wrapper .service-40div {
+  width: 40%;
+}
+
+.main-service-body .main-service-wrapper .service-60div {
+  width: 50%;
+}
+
+.main-service-body .main-service-wrapper .service-tech-div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main-service-body .main-service-wrapper .service-tech-div h3 {
+  margin-top: 50px;
+}
+
+.main-service-body .main-service-wrapper .service-tech-div .service-tech-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.main-service-body .main-service-wrapper .service-tech-div .service-tech-wrap .tech-mini-card {
+  background: white;
+  -webkit-box-shadow: 8px 12px 60px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 8px 12px 60px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: 40px;
+  padding: 20px;
+}
+
+.main-service-body .main-service-wrapper .service-tech-div .service-tech-wrap .tech-mini-card img {
+  width: 100%;
+}
+
+.main-service-body .main-service-wrapper .service-tech-div .learn-btn {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main-service-body .main-service-wrapper .service-tech-div .learn-btn a {
+  padding: 14px 42px;
+  border-radius: 40px;
 }
 /*# sourceMappingURL=service.css.map */

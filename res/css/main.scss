@@ -73,6 +73,10 @@ p {
 .blue-btn {
   background: linear-gradient(180deg, $gradientstart, $gradientend);
   color: white;
+
+  &:hover{
+    box-shadow: 0 18px 30px 0px hsla(217, 100%, 50%, 0.155);
+  }
 }
 ////////// To Top Btn ////////
 .top-btn-wrapper {
@@ -2269,11 +2273,11 @@ footer {
             padding: 0 0;
           }
           .priv-arrow{
-            bottom: -20px;
+            bottom: -35px;
             left: 35%;
           }
           .next-arrow{
-            bottom: -20px;
+            bottom: -35px;
             right: 35%;
           }
         }
@@ -2365,11 +2369,11 @@ footer {
         padding: 0 20px;
         .priv-arrow{
           top: unset;
-          bottom: 15%;
+          bottom: 5%;
         }
         .next-arrow{
           top: unset;
-          bottom: 15%;
+          bottom: 5%;
         }
       }
       .bottom-testi-border{
