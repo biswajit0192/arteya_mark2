@@ -147,12 +147,27 @@
                 </div>
 
                 <ul class="mob-menu border1">
-                    <div>
+                    <div class="menu-list">
                         <li><a class="active-menu" href="">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="">Services</a></li>
+                        <li id="head-sercive-menu-mob"><a>Services
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="transform: msFilter"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></span>
+                            </a>
+                            <div id="drop-menu-mob" class="drop-menu-mob">
+                                <div class="drop-menu-wrap">
+                                    <ul>
+                                        <li><a href="services-it.html">It Solutions</a></li>
+                                        <li><a href="services-digital.html">Digital Marketing</a></li>
+                                        <li><a href="services-data.html">Data Managemnet</a></li>
+                                        <li><a href="services-bpo.html">BPO Services</a></li>
+                                        <li><a href="services-manpower.html">Manpower Services</a></li>
+                                        <li><a href="services-voice.html">Voice Solutions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="">Our Works</a></li>
+                        <li><a href="">Portfolio</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </div>
                 </ul>
@@ -457,49 +472,39 @@
         </div>
     </section>
 
-    <!-- <section class="project-sec" id="4th-sec"></section> -->
-
-    <!-- <section class="milestone-sec home-card-style-sec" id="2nd-sec">
-        <div class="prime-container feature-wrapper home-card-wrapper">
-            <div class="heading-wrap">
-                <div class="sub-heading">Milestone</div>
-                <h2 class="heading">It gives us tremendous delight and pride to declare</h2>
-                <p class="sec-content">our achievements accomplished pan Odisha. We have effectively settled our quality working with the corporate world and have been recognized for our straight forwardness, mastery and persevering nature. The ongoing journey is all about the trust our customers have shown, and the phenomenal outcomes, that we have yielded.</p>
+    <section class="client-sec" id="about-client">
+        <div class="prime-container client-wrapper">
+            <div class="client-content-wrap">
+                <div class="heading-wrapper">
+                    <div class="sub-heading">Our Clients</div>
+                    <div class="heading">We Proudly Present some of our happy client.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nesciunt, adipisci labore distinctio cupiditate aperiam? Distinctio molestias veniam, ea ducimus voluptas nam cum quo ullam voluptatum ratione illum vitae fugiat?</p>
+                </div>
             </div>
 
-            <div class="feature-cards-wrapper grid-cards">
-                <div class="service-card">
-                    <div class="card-icon-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66.607" height="72.936" viewBox="0 0 66.607 72.936"><defs><linearGradient id="linear-gradient-light-blue-circle" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#3482FF"></stop><stop offset="1" stop-color="#054FC4"></stop></linearGradient></defs><g id="Group_762" data-name="Group 762" transform="translate(-203.045 -3541.829)"><path id="Path_132" data-name="Path 132" d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(203.045 3541.829)" fill="url(#linear-gradient-light-blue-circle)"></path><g id="project-management" transform="translate(207.87 3553)"><g id="Group_679" data-name="Group 679" transform="translate(0 0.255)"><g id="Group_678" data-name="Group 678" transform="translate(0 0)"><path id="Path_119" data-name="Path 119" d="M60.9,18.017h0l0,0-3.988-.569a1.025,1.025,0,0,1-.471-1.835l3.223-2.417a1.025,1.025,0,0,0,.205-1.435L56.18,6.837a1.025,1.025,0,0,0-1.435-.205L51.522,9.05a1.025,1.025,0,0,1-1.634-.965l.57-3.988a1.025,1.025,0,0,0-.869-1.16h0L43.5,2.067a1.025,1.025,0,0,0-1.16.869h0l-.57,3.988a1.025,1.025,0,0,1-1.835.471L37.521,4.172a1.025,1.025,0,0,0-1.435-.205L33,6.279a19.835,19.835,0,0,0-4.193,0A19.478,19.478,0,0,0,11.638,23.744c-.028.29-.038.578-.052.866h-.308a1.025,1.025,0,0,0-1,.82L9.567,28.8,6.729,26.842a1.025,1.025,0,0,0-1.307.119L2.347,30.037a1.025,1.025,0,0,0-.119,1.306l1.948,2.833-3.37.708a1.025,1.025,0,0,0-.806,1v4.1a1.025,1.025,0,0,0,.814,1l3.37.708L2.236,44.532a1.025,1.025,0,0,0,.119,1.306L5.43,48.914a1.025,1.025,0,0,0,1.307.119L9.57,47.08l.708,3.37a1.025,1.025,0,0,0,1,.82h4.1a1.025,1.025,0,0,0,1-.814l.708-3.37,2.833,1.948a1.025,1.025,0,0,0,1.306-.119l1.592-1.6v2.922a4.087,4.087,0,0,0,2.05,3.531v5.7a4.1,4.1,0,0,0,4.1,4.1h4.1a4.1,4.1,0,0,0,4.1-4.1v-5.7a4.087,4.087,0,0,0,2.05-3.531V46.182A5.023,5.023,0,0,1,41.6,42a19.673,19.673,0,0,0,2.413-1.845l-1.368-1.527a17.452,17.452,0,0,1-2.16,1.652,7.061,7.061,0,0,0-3.307,5.906v4.058a2.05,2.05,0,0,1-2.05,2.05h-8.2a2.05,2.05,0,0,1-2.05-2.05V46.1a6.9,6.9,0,0,0-3.252-5.786A17.375,17.375,0,0,1,30.8,8.223a1.114,1.114,0,0,0-.04.112,1.025,1.025,0,0,0,.2.76l2.416,3.222a1,1,0,0,1,.062,1.138,1.019,1.019,0,0,1-1.025.493l-3.988-.57a1.025,1.025,0,0,0-1.16.869h0l-.87,6.088a1.025,1.025,0,0,0,.869,1.16h0l3.988.57a1.025,1.025,0,0,1,.471,1.835L28.5,26.318a1.025,1.025,0,0,0-.205,1.435l3.691,4.921a1.025,1.025,0,0,0,1.435.205l3.223-2.416a1.025,1.025,0,0,1,1.629.965l-.569,3.988a1.025,1.025,0,0,0,.869,1.16h0l6.089.87a1.135,1.135,0,0,0,.145.009,1.025,1.025,0,0,0,1.016-.88l.569-3.988a1.025,1.025,0,0,1,1.835-.471l2.417,3.222a1.025,1.025,0,0,0,1.435.205L57,31.854a1.025,1.025,0,0,0,.205-1.435L54.791,27.2a1.008,1.008,0,0,1-.062-1.138,1,1,0,0,1,1.025-.492l3.988.569a1.025,1.025,0,0,0,1.16-.869h0l.869-6.089A1.025,1.025,0,0,0,60.9,18.017ZM26.925,54.34h8.2v2.05h-8.2Zm0,4.1h8.2v1.025a2.05,2.05,0,0,1-2.05,2.05h-4.1a2.05,2.05,0,0,1-2.05-2.05ZM18.763,40.762a19.377,19.377,0,0,0,1.752,1.276,5,5,0,0,1,2.066,2.623l-2.2,2.195-2.129-1.468a2.05,2.05,0,0,0-3.17,1.266l-.537,2.56H12.109l-.537-2.556A2.05,2.05,0,0,0,8.4,45.393l-2.13,1.464L4.4,44.993l1.467-2.128a2.05,2.05,0,0,0-1.265-3.171L2.05,39.155V36.72l2.556-.538a2.05,2.05,0,0,0,1.266-3.165L4.4,30.882l1.868-1.864L8.4,30.487a2.05,2.05,0,0,0,3.169-1.267l.179-.853a19.522,19.522,0,0,0,.813,3.476,6.151,6.151,0,1,0,6.2,8.919Zm-1.592-1.444a4.095,4.095,0,1,1-3.844-5.48h.039A19.416,19.416,0,0,0,17.171,39.317ZM59.012,23.959l-2.973-.424a3.075,3.075,0,0,0-2.9,4.89l1.8,2.4-3.281,2.46-1.8-2.4a3.075,3.075,0,0,0-5.505,1.41l-.415,2.977-4.059-.58.424-2.973a3.076,3.076,0,0,0-4.89-2.9l-2.4,1.8-2.46-3.281,2.4-1.8a3.075,3.075,0,0,0-1.41-5.505l-2.973-.424.58-4.059,2.973.424a3.076,3.076,0,0,0,2.9-4.89l-1.807-2.4L36.5,6.223l1.8,2.4A3.075,3.075,0,0,0,43.8,7.216l.424-2.973,4.059.579-.424,2.973a3.075,3.075,0,0,0,4.89,2.9l2.4-1.8,2.46,3.281-2.4,1.8a3.075,3.075,0,0,0,1.41,5.505L59.6,19.9Z" transform="translate(0 -2.057)"></path></g></g><g id="Group_681" data-name="Group 681" transform="translate(35.881 9.752)"><g id="Group_680" data-name="Group 680"><path id="Path_120" data-name="Path 120" d="M288.2,76.171a8.2,8.2,0,1,0,8.2,8.2A8.2,8.2,0,0,0,288.2,76.171Zm0,14.352a6.151,6.151,0,1,1,6.151-6.151A6.151,6.151,0,0,1,288.2,90.523Z" transform="translate(-280 -76.171)"></path></g></g><g id="Group_683" data-name="Group 683" transform="translate(30 45.362)"><g id="Group_682" data-name="Group 682"><rect id="Rectangle_164" data-name="Rectangle 164" width="2.05" height="3.075"></rect></g></g><g id="Group_685" data-name="Group 685" transform="translate(16.665 11.69)"><g id="Group_684" data-name="Group 684"><path id="Path_121" data-name="Path 121" d="M139.921,114.9a12.3,12.3,0,0,1-2.077-21.87l-1.1-1.735a14.352,14.352,0,0,0,2.429,25.512,6.545,6.545,0,0,1,4.2,6.11h2.05A8.578,8.578,0,0,0,139.921,114.9Z" transform="translate(-130.044 -91.291)"></path></g></g><g id="Group_687" data-name="Group 687" transform="translate(50.503 38.186)"><g id="Group_686" data-name="Group 686"><rect id="Rectangle_165" data-name="Rectangle 165" width="7.176" height="2.05"></rect></g></g><g id="Group_689" data-name="Group 689" transform="translate(48.822 43.549)"><g id="Group_688" data-name="Group 688" transform="translate(0 0)"><rect id="Rectangle_166" data-name="Rectangle 166" width="2.05" height="8.006" transform="matrix(0.64, -0.768, 0.768, 0.64, 0, 1.575)"></rect></g></g><g id="Group_691" data-name="Group 691" transform="translate(44.352 46.387)"><g id="Group_690" data-name="Group 690"><rect id="Rectangle_167" data-name="Rectangle 167" width="2.05" height="7.176"></rect></g></g><g id="Group_693" data-name="Group 693" transform="translate(1.047 15.663)"><g id="Group_692" data-name="Group 692" transform="translate(0 0)"><rect id="Rectangle_168" data-name="Rectangle 168" width="8.453" height="2.049" transform="translate(0 2.05) rotate(-14.035)"></rect></g></g><g id="Group_695" data-name="Group 695" transform="translate(2.75 5.573)"><g id="Group_694" data-name="Group 694" transform="translate(0 0)"><rect id="Rectangle_169" data-name="Rectangle 169" width="2.049" height="8.818" transform="matrix(0.581, -0.814, 0.814, 0.581, 0, 1.668)"></rect></g></g><g id="Group_697" data-name="Group 697" transform="translate(11.533)"><g id="Group_696" data-name="Group 696" transform="translate(0 0)"><rect id="Rectangle_170" data-name="Rectangle 170" width="2.05" height="8.465" transform="matrix(0.969, -0.248, 0.248, 0.969, 0, 0.508)"></rect></g></g></g></g></svg>
-                    </div>
-                    <div class="card-heading" id="complete-project-head">750</div>
-                    <div class="card-content">
-                        <p>Completed Projects</p>
-                    </div>
+            <div class="client-logos-wrap">
+                <div class="logo-wraps">
+                    <img class="load-delay" src="./res/img/bpcl.jpg" data-original="./res/img/hpcl.jpg" />    
                 </div>
-
-                <div class="service-card">
-                    <div class="card-icon-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.203" height="72.971" viewBox="0 0 68.203 72.971"><defs><linearGradient id="linear-gradient-green-circle-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#b1ffbe"></stop><stop offset="0.444" stop-color="#5cdb8e"></stop><stop offset="1" stop-color="#149654"></stop></linearGradient></defs><g id="Group_763" data-name="Group 763" transform="translate(-521.396 -3621.829)"><circle id="Ellipse_04" data-name="Ellipse 04" cx="18" cy="18" r="18" transform="translate(521.396 3621.829)" fill="url(#linear-gradient-green-circle-2)"></circle><g id="feedback" transform="translate(527.216 3633)"><g id="Group_702" data-name="Group 702" transform="translate(0.784)"><g id="Group_701" data-name="Group 701" transform="translate(0)"><path id="Path_122" data-name="Path 122" d="M58.368,6.17H37.8V4.113A4.125,4.125,0,0,0,33.689,0H4.9A4.125,4.125,0,0,0,.784,4.113V26.735c0,11.311,10.8,11.311,14.4,11.311a1.028,1.028,0,1,0,0-2.057,4.125,4.125,0,0,1-4.113-4.113v-.411a4.325,4.325,0,0,1,4.319-3.7h14.19V29.82H20.321a.971.971,0,0,0-1.028,1.028,9.232,9.232,0,0,0,2.468,6.273A9.941,9.941,0,0,0,21.35,40.1a10.392,10.392,0,0,0,6.17,9.46c0,.617-.308,1.851-3.085,1.851a5.091,5.091,0,0,0-5.141,5.141V61.7H21.35V56.556a3.055,3.055,0,0,1,2.879-3.085l5.039,2.468a7.14,7.14,0,0,0,1.337.514V61.7h2.057V56.453A5.091,5.091,0,0,0,34,56.042l5.039-2.468a3.055,3.055,0,0,1,2.879,3.085V61.8h2.057V56.659a5.091,5.091,0,0,0-5.141-5.141c-2.776,0-3.085-1.234-3.085-1.851a10.235,10.235,0,0,0,6.17-9.769v-.72a8.149,8.149,0,0,0-1.028-4.113h6.89a4.325,4.325,0,0,1,4.319,3.7,4.148,4.148,0,0,1-3.7,4.524h-.411a1.028,1.028,0,1,0,0,2.057c3.6,0,14.4,0,14.4-11.311V10.283A3.975,3.975,0,0,0,58.368,6.17ZM15.386,25.707A6.429,6.429,0,0,0,9.01,31.26a6.466,6.466,0,0,0,1.234,4.319c-5.039-1.028-7.4-3.8-7.4-8.843V4.113A2.063,2.063,0,0,1,4.9,2.057H33.689a2.063,2.063,0,0,1,2.057,2.057V23.651a2.063,2.063,0,0,1-2.057,2.057Zm6.067,6.17H32.661a7.2,7.2,0,0,1,7.1,6.17H28.548A7.2,7.2,0,0,1,21.453,31.877ZM34.409,47.815a.988.988,0,0,0-.72.925v.617a3.619,3.619,0,0,0,2.057,3.5l-2.674,1.337a3.758,3.758,0,0,1-2.982,0l-2.571-1.337a3.619,3.619,0,0,0,2.057-3.5v-.514a.988.988,0,0,0-.72-.925,8.326,8.326,0,0,1-5.45-7.815,6.324,6.324,0,0,1,.1-1.44,9.312,9.312,0,0,0,5.039,1.44H39.859A8.1,8.1,0,0,1,34.409,47.815ZM60.425,33.933c0,5.039-2.365,7.815-7.4,8.843a6.466,6.466,0,0,0,1.234-4.319,6.353,6.353,0,0,0-6.375-5.553H39.55a9.193,9.193,0,0,0-6.89-3.085H31.633V27.764h2.057A4.125,4.125,0,0,0,37.8,23.651V8.226H58.368a2.063,2.063,0,0,1,2.057,2.057V33.933Z" transform="translate(-0.784)"></path></g></g><g id="Group_704" data-name="Group 704" transform="translate(9.01 4.113)"><g id="Group_703" data-name="Group 703"><path id="Path_123" data-name="Path 123" d="M80.208,39.2H79.18a.971.971,0,0,1-1.028-1.028V35.085a3.085,3.085,0,1,0-6.17,0V38.17A.971.971,0,0,1,70.954,39.2a.971.971,0,0,0-1.028-1.028H65.812A.971.971,0,0,0,64.784,39.2V50.509a.971.971,0,0,0,1.028,1.028h4.113a.971.971,0,0,0,1.028-1.028h9.255a3.03,3.03,0,0,0,3.085-3.085V42.283A3.03,3.03,0,0,0,80.208,39.2ZM68.9,49.481H66.841V40.226H68.9Zm12.339-2.057a.971.971,0,0,1-1.028,1.028H70.954v-7.2a3.03,3.03,0,0,0,3.085-3.085V35.085a1.028,1.028,0,1,1,2.057,0V38.17a3.03,3.03,0,0,0,3.085,3.085h1.028a.971.971,0,0,1,1.028,1.028Z" transform="translate(-64.784 -32)"></path></g></g><g id="Group_706" data-name="Group 706" transform="translate(39.859 10.283)"><g id="Group_705" data-name="Group 705"><path id="Path_124" data-name="Path 124" d="M322.265,80h-4.113a.972.972,0,0,0-1.028,1.028h-9.255a3.03,3.03,0,0,0-3.085,3.085v5.141a3.03,3.03,0,0,0,3.085,3.085H308.9a.972.972,0,0,1,1.028,1.028v3.085a3.085,3.085,0,1,0,6.17,0V93.368a.972.972,0,0,1,1.028-1.028.972.972,0,0,0,1.028,1.028h4.113a.972.972,0,0,0,1.028-1.028V81.028A.972.972,0,0,0,322.265,80Zm-5.141,10.283a3.03,3.03,0,0,0-3.085,3.085v3.085a1.028,1.028,0,1,1-2.057,0V93.368a3.03,3.03,0,0,0-3.085-3.085h-1.028a.971.971,0,0,1-1.028-1.028V84.113a.972.972,0,0,1,1.028-1.028h9.255Zm4.113,1.028H319.18V82.057h2.057Z" transform="translate(-304.784 -80)"></path></g></g><g id="Group_708" data-name="Group 708" transform="translate(38.831 26.735)"><g id="Group_707" data-name="Group 707"><rect id="Rectangle_171" data-name="Rectangle 171" width="4" height="2" transform="translate(-0.047 0.265)"></rect></g></g><g id="Group_710" data-name="Group 710" transform="translate(25.463 4.113)"><g id="Group_709" data-name="Group 709"><path id="Path_125" data-name="Path 125" d="M195.869,33.028V32h-2.057v1.028h-1.028v2.057h1.028v1.028h2.057V35.085H196.9V33.028Z" transform="translate(-192.784 -32)"></path></g></g></g></g></svg>
-                    </div>
-                    <div class="card-heading border1" id="green-heading">550</div>
-                    <div class="card-content border1">
-                        <p>Happy Clients</p>
-                    </div>
+                <div class="logo-wraps">
+                    <img class="load-delay" src="./res/img/gail.png" data-original="./res/img/bpcl.jpg" />  
                 </div>
-
-                <div class="service-card">
-                    <div class="card-icon-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.138" height="73.22" viewBox="0 0 69.138 73.22"><defs><linearGradient id="linear-gradient-orange-circle-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ff7f31"></stop><stop offset="1" stop-color="#ffd25f"></stop></linearGradient></defs><g id="Group_764" data-name="Group 764" transform="translate(-839.746 -3541.829)"><circle id="Ellipse_05" data-name="Ellipse 05" cx="18" cy="18" r="18" transform="translate(839.746 3541.829)" fill="url(#linear-gradient-orange-circle-2)"></circle><g id="latte" transform="translate(845 3545.353)"><g id="Group_712" data-name="Group 712" transform="translate(9.922 17.935)"><g id="Group_711" data-name="Group 711"><path id="Path_126" data-name="Path 126" d="M93.005,80.045a20.923,20.923,0,1,0,20.923,20.923A20.923,20.923,0,0,0,93.005,80.045Zm0,39.644a18.721,18.721,0,1,1,18.721-18.721A18.721,18.721,0,0,1,93.005,119.689Z" transform="translate(-72.082 -80.045)"></path></g></g><g id="Group_714" data-name="Group 714" transform="translate(0 8.021)"><g id="Group_713" data-name="Group 713" transform="translate(0 0)"><path id="Path_127" data-name="Path 127" d="M63.443,36.948a4.372,4.372,0,0,0-2.023-2.023h0a30.834,30.834,0,1,0,0,7.867A4.373,4.373,0,0,0,63.443,36.948ZM30.846,67.49A28.632,28.632,0,1,1,59.138,34.454H55.785a25.328,25.328,0,1,0,0,8.81h3.353A28.551,28.551,0,0,1,30.846,67.49ZM59.477,41.061H54.842a1.1,1.1,0,0,0-1.091.953,23.126,23.126,0,1,1,0-6.31,1.1,1.1,0,0,0,1.091.953h4.635a2.2,2.2,0,0,1,0,4.4Z" transform="translate(0 -8.021)"></path></g></g><g id="Group_716" data-name="Group 716" transform="translate(16.53 36.781)"><g id="Group_715" data-name="Group 715"><path id="Path_128" data-name="Path 128" d="M147.613,216.951a1.1,1.1,0,0,0-.778.322L134.4,229.71l-12.436-12.437a1.1,1.1,0,0,0-1.88.779c0,8.563,5.753,14.316,14.316,14.316s14.316-5.753,14.316-14.316A1.1,1.1,0,0,0,147.613,216.951ZM122.575,221l8.875,8.875A11.012,11.012,0,0,1,122.575,221Zm14.773,8.875L146.222,221A11.012,11.012,0,0,1,137.348,229.875Z" transform="translate(-120.083 -216.951)"></path></g></g><g id="Group_718" data-name="Group 718" transform="translate(20.935 31.274)"><g id="Group_717" data-name="Group 717"><path id="Path_129" data-name="Path 129" d="M170.8,176.943a1.1,1.1,0,0,0-.727.273l-8.084,7.074-8.084-7.074a1.1,1.1,0,0,0-1.827.829c0,5.954,3.707,12.113,9.911,12.113S171.9,184,171.9,178.045A1.1,1.1,0,0,0,170.8,176.943Zm-8.811,11.013c-3.936,0-6.58-3.353-7.42-7.233l6.694,5.858a1.1,1.1,0,0,0,1.451,0l6.694-5.858C168.573,184.6,165.929,187.956,161.993,187.956Z" transform="translate(-152.082 -176.943)"></path></g></g><g id="Group_720" data-name="Group 720" transform="translate(23.763 24.546)"><g id="Group_719" data-name="Group 719"><path id="Path_130" data-name="Path 130" d="M185.626,129.225a3.965,3.965,0,0,0-4.564-.741l-1.352.683-1.352-.677a3.964,3.964,0,0,0-4.574,6.347l5.148,5.144a1.1,1.1,0,0,0,1.557,0l5.148-5.149A3.964,3.964,0,0,0,185.626,129.225Zm-1.547,4.049-4.37,4.372-4.37-4.372a1.762,1.762,0,0,1-.33-2.033h0a1.762,1.762,0,0,1,2.362-.787l1.846.923a1.1,1.1,0,0,0,.984,0l1.846-.923a1.762,1.762,0,0,1,2.032,2.82Z" transform="translate(-172.626 -128.068)"></path></g></g></g></g></svg>
-                    </div>
-                    <div class="card-heading" id="yellow-heading">1M</div>
-                    <div class="card-content">
-                        <p>Coffee</p>
-                    </div>
+                <div class="logo-wraps">
+                    <img class="load-delay" src="./res/img/hpcl.jpg" data-original="./res/img/iocl.png" /> 
                 </div>
+                <div class="logo-wraps">
+                    <img class="load-delay" src="./res/img/iocl.png" data-original="./res/img/gail.png" />   
+                </div>
+                <div class="logo-wraps">
+                    <img class="load-delay" src="./res/img/gail.png" data-original="./res/img/hpcl.jpg" />  
+                </div>
+                <div class="logo-wraps">
+                    <img class="load-delay" src="./res/img/hpcl.jpg" data-original="./res/img/bpcl.jpg" />  
+                </div>
+                
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="testimonial-sec" id="testimonial">
         <div class="prime-container testimonial-wrapper">
@@ -583,23 +588,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section class="client-logos">
-        <div class="prime-container client-logo-wrapper">
-            <div class="logo-wraps">
-                <img src="./res/img/bpcl.jpg" alt="">
-            </div>
-            <div class="logo-wraps">
-                <img src="./res/img/gail.png" alt="">
-            </div>
-            <div class="logo-wraps">
-                <img src="./res/img/hpcl.jpg" alt="">
-            </div>
-            <div class="logo-wraps">
-                <img src="./res/img/iocl.png" alt="">
-            </div>
-        </div>
-    </section> -->
 
     <footer>
         <svg id="footer-yellow-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.056" height="40.227" viewBox="0 0 43.056 40.227"><defs><linearGradient id="linear-gradient-polygon" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ff7f31"></stop><stop offset="1" stop-color="#ffd25f"></stop></linearGradient></defs><path id="Polygon_3" data-name="Polygon 3" d="M18,0,36,32H0Z" transform="matrix(-0.966, -0.259, 0.259, -0.966, 34.773, 40.227)" fill="url(#linear-gradient-polygon)"></path></svg>
@@ -737,57 +725,57 @@
                     <div class="service-link">
                         <div class="service_megamenu">
                             <a href="services-it.html">IT Solutions</a>
-                            <div class="s_link">
+                            <!-- <div class="s_link">
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="service_megamenu">
                             <a href="services-it.html">Digital Marketing</a>
-                            <div class="s_link">
+                            <!-- <div class="s_link">
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="service_megamenu">
                             <a href="services-it.html">Data Management</a>
-                            <div class="s_link">
+                            <!-- <div class="s_link">
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="service_megamenu">
                             <a href="services-it.html">BPO Services</a>
-                            <div class="s_link">
+                            <!-- <div class="s_link">
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="service_megamenu">
                             <a href="services-it.html">Manpower Services</a>
-                            <div class="s_link">
+                            <!-- <div class="s_link">
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="service_megamenu">
                             <a href="services-it.html">Voice Solutions</a>
-                            <div class="s_link">
+                            <!-- <div class="s_link">
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
                                 <a href="">dcbahc</a>
-                            </div>
+                            </div> -->
                         </div>
                         
                         
@@ -800,7 +788,7 @@
         </div>
     </footer>
 
-    <script src="./res/js/main.js"></script>
+    
 
     <!-- Slider Cdns -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -852,6 +840,23 @@
             ]
         });
     </script>
-    
+    <!-- <script>
+        $(document).ready(function() {
+            setInterval(function () {
+                var i = Math.floor(Math.random() * 6);
+                $('.load-delay').each(function (index) {
+                    if(index == i){
+                        var imagex = $(this);
+                        var imgOriginal = imagex.data('original');
+                        var imgExisting = imagex.attr('src');
+                        imagex.attr('src', imgOriginal);
+                        imagex.data('original', imgExisting);
+                        console.log(index);
+                    }
+                });
+            }, 1000);        
+        });
+    </script> -->
+    <script src="./res/js/main.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ $prime-gray: #7d7d7d;
 $dark-gray: #333333;
 
 /////////// Measurements ///////////
-$section-gap: 200px;
+$section-gap: 120px;
 $section-gap-mobile: 120px;
 $cover-bottom-gap: 140px;
 $hover-transition: 400ms;
@@ -413,11 +413,15 @@ footer {
             display: grid;
             // margin-right: 5px;
             a{
-              color: white;
-              font-weight: bold;
-              justify-content: center;
-              display: grid;
-            }
+                color: #646464;
+                // font-weight: bold;
+                justify-content: center;
+                display: grid;
+    
+                &:hover{
+                  color: $prime;
+                }
+              }
             .s_link{
               // display: grid;
               // grid-template-columns: 1fr 1fr;
@@ -496,7 +500,7 @@ footer {
   }
   .main-service-sec{
     margin-top: 100px;
-    margin-bottom: 140px;
+    margin-bottom: 0px;
 
     .heading-wrap{
       position: relative;
@@ -619,7 +623,7 @@ footer {
 }
 
 .workFlow-sec{
-    margin-bottom: 140px;
+    // margin-bottom: 140px;
     .work-flow-img{
         width: 100%;
         display: flex;

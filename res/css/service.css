@@ -490,13 +490,16 @@ footer .footertop-service .service-link .service_megamenu {
 }
 
 footer .footertop-service .service-link .service_megamenu a {
-  color: white;
-  font-weight: bold;
+  color: #646464;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: -ms-grid;
   display: grid;
+}
+
+footer .footertop-service .service-link .service_megamenu a:hover {
+  color: #1c5ec9;
 }
 
 footer .footertop-service .service-link .service_megamenu .s_link {
@@ -534,7 +537,7 @@ footer .footer-copy-right p {
 
 .main-service-sec {
   margin-top: 100px;
-  margin-bottom: 140px;
+  margin-bottom: 0px;
 }
 
 .main-service-sec .heading-wrap {
@@ -679,10 +682,6 @@ footer .footer-copy-right p {
   top: -30px;
 }
 
-.workFlow-sec {
-  margin-bottom: 140px;
-}
-
 .workFlow-sec .work-flow-img {
   width: 100%;
   display: -webkit-box;
@@ -694,7 +693,7 @@ footer .footer-copy-right p {
 }
 
 .main-service-body {
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 .main-service-body .main-service-wrapper {
