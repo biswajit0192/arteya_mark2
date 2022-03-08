@@ -563,6 +563,7 @@ footer {
                 margin-top: 30px;
                 display: flex;
                 justify-content: space-between;
+                gap: 20px;
                 opacity: 0;
                 transform: translate(0, 40px);
                 animation: service-animation 800ms;
@@ -571,7 +572,7 @@ footer {
         
                 .ex-box{
                   position: relative;
-                  width: 26%;
+                  width: auto;
                   background: white;
                   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
                   border-radius: 28px;
@@ -642,6 +643,12 @@ footer {
         }
         .service-60div{
             width: 50%;
+
+            .content-wrap{
+                p{
+                    text-align: justify;
+                }
+            }
         }
 
         .service-tech-div{
@@ -653,16 +660,26 @@ footer {
             }
             .service-tech-wrap{
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 column-gap: 20px;
+                row-gap: 20px;
                 .tech-mini-card{
                     background: white;
                     box-shadow: 8px 12px 60px 0px rgba(0, 0, 0, 0.05);
                     border-radius: 20px;
                     width: 40px;
-                    padding: 20px;
+                    height: 56px;
+                    padding: 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     img{
                         width: 100%;
+                    }
+                    p{
+                        color: black;
+                        font-weight: 600;
+                        padding: 0 4px;
                     }
                 }
             }
