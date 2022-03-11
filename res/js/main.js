@@ -47,7 +47,7 @@ window.addEventListener('scroll', () => {
 
 topBtn.addEventListener('click', () => {
     window.scrollTo(0, 0);
-    document.location.href = String( document.location.href ).replace( "#/", "" );
+    // document.location.href = String( document.location.href ).replace( "#/", "" );
     // htmlbody.style.scrollBehavior = "smooth";
 });
 

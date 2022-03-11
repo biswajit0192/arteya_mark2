@@ -192,8 +192,8 @@
                                 </div>
                             </li>
                             <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="works.html">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a class="active-menu">Contact</a></li>
                         </ul>
                     </div>
@@ -240,8 +240,8 @@
                             </div>
                         </li>
                         <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a class="active-menu">Contact</a></li>
                     </div>
                 </ul>
@@ -322,7 +322,7 @@
         </div>
     </section>
 
-    <section class="pricing-main">
+    <section class="pricing-main contact-map-form">
         <div class="prime-container">
             <div class="heading-wrap">
                 <div class="sub-heading">Get in Touch</div>
@@ -339,7 +339,7 @@
     <section class="get-in-touch">
         <div class="prime-container">
             <div class="contact-body-wrapper">
-                <div class="contact-body-grid">
+                <div class="contact-body-grid contact-map">
 
                     <div class="mapouter">
                         <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
@@ -350,27 +350,42 @@
 
                 </div>
 
-                <div class="contact-body-grid">
+                <div class="contact-body-grid contact-form">
                     <div class="contact-form-wrapper">
 
-                        <form action="#" method="post" id="contact_form">
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Full Name">
-                            <input class="form-control" type="email" name="email" id="email" placeholder="Email">
-                            <select class="form-control" aria-label="Default select example">
-                                <option selected>Service</option>
-                                <option value="1">Service1</option>
-                                <option value="2">Service2</option>
-                                <option value="3">Service3</option>
-                            </select>
-                            <select class="form-control" aria-label="Default select example">
-                                <option selected>Sub Service</option>
-                                <option value="1">Service1</option>
-                                <option value="2">Service2</option>
-                                <option value="3">Service3</option>
-                            </select>
-                            <!-- <textarea name="message" id="message" cols="30" rows="12" placeholder="Message"></textarea> -->
-                            <div class="submit-btn-div"><input type="submit" name="submit" id="submit"
-                                    value="Send Message"></div>
+                        <form method="post" id="contact_form_submit">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Full Name *"  required>
+                            <input class="form-control" type="text" name="org_name" id="org_name" placeholder="Organization Name" >
+                            <input class="form-control" type="email" name="email" id="email" placeholder="Email *"  required>
+                            <input class="form-control" type="tel" name="mobile" id="mobile" placeholder="Mobile No *" pattern="[789][0-9]{9}" required="required">
+                            <select  class="form-control" id="service_opt" required="required">
+                                <option value="0" >Select a service *</option>
+                                <option value="IT solutions">IT Solutions</option>
+                                <option value="Digital marketing">Digital Marketing</option>
+                                <option value="Data management">Data Management</option>
+                                <option value="BPO services">BPO Services</option>
+                                <option value="Manpower services">Manpower Services</option>
+                                <option value="Voice solutions">Voice Solutions</option>
+                              </select>
+                              
+                              <select  class="form-control" id="choices" required>
+                                <option value="" >Please select a sub-service *</option>
+                              </select>                          
+                            <input class="form-control" type="text" name="website" id="website" placeholder="Website if any">
+                            <div class="fileUploadWrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M18 22a2 2 0 0 0 2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12zM13 4l5 5h-5V4zM7 8h3v2H7V8zm0 4h10v2H7v-2zm0 4h10v2H7v-2z"></path></svg>
+                                <input type="file" name="fileToUpload">
+                        
+                                <p class="fileName">Attach documentation if any<br>(only pdf or doc file)</p>
+                            </div>
+                            <!-- <input class="form-control" type="file" name="file" id="file" > -->
+                            <textarea name="message" id="message" cols="30" rows="12" placeholder="Message"></textarea>
+                            <div class="submit-btn-div">
+                                <!-- <input type="submit" name="submit" id="submit"
+                                    value="Send Message"> -->
+                                    <button type="submit"  name="submit" id="submit"
+                                   >Submit</button>
+                                </div>
                         </form>
                     </div>
                 </div>
@@ -568,8 +583,8 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="works.html">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a class="footer-active-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -580,21 +595,21 @@
                         <h2>Contact Info.</h2>
                         <ul>
                             <li>2355, Indira Maidan St, Nilakantha Nagar, Nayapalli, Bhubaneswar, Odisha 751015</li>
-                            <li>+ 91 70087 17359</li>
-                            <li>info@atreyaassociates.com</li>
+                            <li><a  href="tel:7008717359">+ 91 70087 17359</a></li>
+                            <li><a href="mailto:info@atreyaassociates.com">info@atreyaassociates.com</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-links footer-form">
                     <div>
                         <h2>Contact Us</h2>
-                        <form action="#" method="post" id="contact_form1">
+                        <form  method="post" id="contact_form1">
                             <input type="text" name="name" id="name1" placeholder="Full Name">
                             <input type="email" name="email" id="email1" placeholder="Email">
                             <input type="text" name="subject" id="subject1" placeholder="Subject">
                             <textarea name="message" id="message1" cols="15" rows="5" placeholder="Message"></textarea>
-                            <div class="submit-btn-div"><input type="submit" name="submit" id="submit1"
-                                    value="Send Message"></div>
+                            <div class="submit-btn-div"><input type="button" name="submit1" id="submit1"
+                                    value="Submit"></div>
                         </form>
                     </div>
                 </div>
@@ -667,31 +682,85 @@
             </div>
         </div>
     </footer>
-
+    
+    <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></Script>
     <script src="./res/js/main.js"></script>
+    <!-- <script src="./res/js/validate.js"></script> -->
     <script>
-        document.getElementById("h1_tag").style.display = "none";
-    </script>
-    <script>
-        $('#contact_form').submit(function (e) {
+        $('#contact_form_submit').submit(function (e) {
             e.preventDefault();
-            var frm = $("#contact_form").serialize();
-            $.ajax({
-                type: 'post',
-                url: 'contact_form.php',
-                data: frm,
-                success: function (data) {
-                    if (data == 1) {
-                        //   window.location.href='enroll-success.html';
-                        window.alert('Message sent successfully');
-                    } else {
-                        //   window.location.href='index.html';
-                        window.alert('Someting went wrong, try to submit again');
-                    }
-                }
-            });
+            // alert("hi");
+           
+            // var name = document.getElementById('name').value;
+            // var email = document.getElementById('email').value;
+            // var mobile = document.getElementById('mobile').value;
+            // var service_opt = document.getElementById('service_opt').value;
+            // var choices = document.getElementById('choices').value;
+            
+            // var ids=['name','email','mobile','service_opt','choices'];
+            // var validation_type=[["blank"],["blank","email"],["blank","mobile"],["select"],["select"]];
+            // var messeges=[["Please enter your full name"],["Email can not be blank","please enter your valid email"],["Mobile no can not be blank","please enter your 10 digit no"],["Please select service"],["Please select sub service"]];
+            // var msg= validate(ids,validation_type,'err_msg',messeges);
+            // if(msg!=false){
+            //     submitform(this,'btnSubmit','txtid');
+            //     load_report();
+            // }
+            // var frm = $("#contact_form").serialize();
+            // $.ajax({
+            //     type: 'post',
+            //     url: 'contact_form.php',
+            //     data: frm,
+            //     success: function (data) {
+            //         if (data == 1) {
+            //             //   window.location.href='enroll-success.html';
+            //             window.alert('Message sent successfully');
+            //         } else {
+            //             //   window.location.href='index.html';
+            //             window.alert('Someting went wrong, try to submit again');
+            //         }
+            //     }
+            // });
         });
 
+        document.getElementById("h1_tag").style.display = "none";
+        // Map your choices to your option value
+var lookup = {
+   'IT solutions': ['Web Design and Development', 'App and Software Development', 'E- Commerce Solutions', 'Mobile Applications', 'Hosting Services', 'Cloud Services'],
+   'Digital marketing': ['SEO - Search Engine Optimization', 'SMM - Social Media Marketing','Whatsapp Marketing','Content Marketing','PPC Marketing','Email Marketing'],
+   'Data management': ['Data Analytics','Data Modeling','Data Warehousing','Data Digitization'],
+   'BPO services': ['Inbound/Outbound/Blended Calling','IVR Services','Voice Blast','Back office support','Telemarketing'],
+   'Manpower services': ['Staffing Service','Manpower Sourcing and Recruitment','HR Solutions'],
+   'Voice solutions': ['VOIP Solutions','Call centre management','Cloud call center'],
+};
+
+// When an option is changed, search the above for matching choices
+$('#service_opt').on('change', function() {
+   // Set selected option as variable
+   var selectValue = $(this).val();
+
+   // Empty the target field
+   $('#choices').empty();
+   
+   // For each chocie in the selected option
+   $('#choices').append("<option value=''>select subservice *</option>");
+   for (i = 0; i < lookup[selectValue].length; i++) {
+      // Output choice in the target field
+      $('#choices').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
+   }
+});
+$(document).on('change', ".fileUploadWrap input[type='file']",function(){
+        if ($(this).val()) {
+
+            var filename = $(this).val().split("\\");
+         
+            filename = filename[filename.length-1];
+
+            $('.fileName').text(filename);
+        }
+ });
+    </script>
+    <script>
+        
     </script>
 
 </body>

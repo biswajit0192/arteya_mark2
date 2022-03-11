@@ -58,7 +58,6 @@
                 <path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path>
             </svg>
         </div>
-
     </div>
 
     <section class="cover-sec" id="cover">
@@ -194,8 +193,8 @@
                                 </div>
                             </li>
                             <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a class="active-menu">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -242,8 +241,8 @@
                             </div>
                         </li>
                         <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a class="active-menu">Portfolio</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </div>
                 </ul>
@@ -318,7 +317,7 @@
                     <li><a id="all-filter" class="active-project-filter">All</a></li>
                     <li><a id="website-filter">Website</a></li>
                     <li><a id="portals-filter">Web Apps</a></li>
-                    <li><a id="apps-filter">Apps</a></li>
+                    <li><a id="apps-filter">Mobile Apps</a></li>
                     <!-- <li><a id="man-filter">Manpower/BPO</a></li> -->
                 </ul>
             </div>
@@ -967,8 +966,8 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="works.html">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a class="footer-active-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -979,8 +978,8 @@
                         <h2>Contact Info.</h2>
                         <ul>
                             <li>2355, Indira Maidan St, Nilakantha Nagar, Nayapalli, Bhubaneswar, Odisha 751015</li>
-                            <li>+ 91 70087 17359</li>
-                            <li>info@atreyaassociates.com</li>
+                            <li><a  href="tel:7008717359">+ 91 70087 17359</a></li>
+                            <li><a href="mailto:info@atreyaassociates.com">info@atreyaassociates.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1074,19 +1073,19 @@
         let webFilt = document.getElementById("website-filter");
         let portalFilt = document.getElementById("portals-filter");
         let appsFilt = document.getElementById("apps-filter");
-        let manFilt = document.getElementById("man-filter");
+        // let manFilt = document.getElementById("man-filter");
 
         let websiteGrid = document.querySelector('.proj-webs-wraps');
         let portalGrid = document.querySelector('.proj-portals-wraps');
         let appsGrid = document.querySelector('.proj-apps-wraps');
-        let manGrid = document.querySelector('.proj-man-wraps');
+        // let manGrid = document.querySelector('.proj-man-wraps');
 
         allFilt.addEventListener('click', () => {
             // console.log("Hello");
             websiteGrid.style.display = 'grid';
             portalGrid.style.display = 'grid';
             appsGrid.style.display = 'grid';
-            manGrid.style.display = 'grid';
+            // manGrid.style.display = 'grid';
             allFilt.classList.add('active-project-filter');
             webFilt.classList.remove('active-project-filter');
             portalFilt.classList.remove('active-project-filter');
@@ -1100,7 +1099,7 @@
             websiteGrid.style.display = 'grid';
             portalGrid.style.display = 'none';
             appsGrid.style.display = 'none';
-            manGrid.style.display = 'none';
+            // manGrid.style.display = 'none';
             allFilt.classList.remove('active-project-filter');
             webFilt.classList.add('active-project-filter');
             portalFilt.classList.remove('active-project-filter');
@@ -1113,7 +1112,7 @@
             websiteGrid.style.display = 'none';
             portalGrid.style.display = 'grid';
             appsGrid.style.display = 'none';
-            manGrid.style.display = 'none';
+            // manGrid.style.display = 'none';
             allFilt.classList.remove('active-project-filter');
             webFilt.classList.remove('active-project-filter');
             portalFilt.classList.add('active-project-filter');
@@ -1125,26 +1124,26 @@
             websiteGrid.style.display = 'none';
             portalGrid.style.display = 'none';
             appsGrid.style.display = 'grid';
-            manGrid.style.display = 'none';
+            // manGrid.style.display = 'none';
             allFilt.classList.remove('active-project-filter');
             webFilt.classList.remove('active-project-filter');
             portalFilt.classList.remove('active-project-filter');
             appsFilt.classList.add('active-project-filter');
             manFilt.classList.remove('active-project-filter');
         });
-        manFilt.addEventListener('click', () => {
-            // console.log("Hello");
-            websiteGrid.style.display = 'none';
-            portalGrid.style.display = 'none';
-            appsGrid.style.display = 'none';
-            manGrid.style.display = 'grid';
-            allFilt.classList.remove('active-project-filter');
-            webFilt.classList.remove('active-project-filter');
-            portalFilt.classList.remove('active-project-filter');
-            appsFilt.classList.remove('active-project-filter');
-            manFilt.classList.add('active-project-filter');
-        });
-        document.getElementById("h1_tag").style.display = "none";
+        // manFilt.addEventListener('click', () => {
+        //     // console.log("Hello");
+        //     websiteGrid.style.display = 'none';
+        //     portalGrid.style.display = 'none';
+        //     appsGrid.style.display = 'none';
+        //     manGrid.style.display = 'grid';
+        //     allFilt.classList.remove('active-project-filter');
+        //     webFilt.classList.remove('active-project-filter');
+        //     portalFilt.classList.remove('active-project-filter');
+        //     appsFilt.classList.remove('active-project-filter');
+        //     manFilt.classList.add('active-project-filter');
+        // });
+        // document.getElementById("h1_tag").style.display = "none";
     </script>
 
 </body>

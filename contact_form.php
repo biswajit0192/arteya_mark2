@@ -30,7 +30,7 @@ $mail = new PHPMailer(true);
 
     //Recipients
     $mail->setFrom('info@atreyaassociates.com', 'Atreya Associates');
-    $mail->addAddress('associatesatreya@gmail.com', 'Atreya Associates');     //Add a recipient
+    $mail->addAddress('biswajit.atreya@gmail.com', 'Biswajit Mohanty');     //Add a recipient
 //    $mail->addAddress('ellen@example.com');               //Name is optional
 //    $mail->addReplyTo('info@example.com', 'Information');
 //    $mail->addCC('cc@example.com');

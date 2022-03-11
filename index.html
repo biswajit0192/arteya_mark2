@@ -199,8 +199,8 @@
                                 </div>
                             </li>
                             <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="works.html">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -247,8 +247,8 @@
                             </div>
                         </li>
                         <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </div>
                 </ul>
@@ -744,10 +744,10 @@
                 <div class="heading-wrap">
                     <div class="sub-heading">About Us</div>
                     <h2 class="heading">Powered by Innovation, Driven by Excellence</h2>
-                    <p class="sec-content">Innovation , Expertise and Excellence in the field of IT, Digital Marketing,
-                        BPO, Manpower and Voice Solutions have been an indigenous effort of ours to connect, empower and
-                        enrich the digital experience of not only business firms but also of resourceful yet less
-                        privileged people.
+                    <p><span>Innovation </span>, <span>Expertise </span> and <span>Excellence </span> in the field of IT,
+                        Digital Marketing, BPO, Manpower and Voice Solutions have been an indigenous effort of ours to
+                        connect, empower and enrich the digital experience of not only business firms but also of
+                        resourceful yet less privileged people.
                         <br><br>We extend our services through wide accessibility, better convenience and cost effective
                         solutions.
                     </p>
@@ -772,22 +772,22 @@
 
             <div class="client-logos-wrap">
                 <div class="logo-wraps">
-                    <img class="load-delay" src="./res/img/swadesh.png" data-original="./res/img/AYUSH.jpg" />
+                    <img class="load-delay" src="./res/img/swadesh.png" data-original="./res/img/iocl.png" />
                 </div>
                 <div class="logo-wraps">
                     <img class="load-delay" src="./res/img/gail.png" data-original="./res/img/bpcl.jpg" />
                 </div>
                 <div class="logo-wraps">
-                    <img class="load-delay" src="./res/img/hpcl.jpg" data-original="./res/img/iocl.png" />
+                    <img class="load-delay" src="./res/img/hpcl.jpg" data-original="./res/img/AYUSH.jpg" />
                 </div>
                 <div class="logo-wraps">
-                    <img class="load-delay" src="./res/img/exchange.png" data-original="./res/img/kw.png" />
+                    <img class="load-delay" src="./res/img/exchange.png" data-original="./res/img/euro_vision.png" />
                 </div>
                 <div class="logo-wraps">
                     <img class="load-delay" src="./res/img/aims_logo.png" data-original="./res/img/mo_pitha.png" />
                 </div>
                 <div class="logo-wraps">
-                    <img class="load-delay" src="./res/img/vedic.png" data-original="./res/img/euro_vision.png" />
+                    <img class="load-delay" src="./res/img/vedic.png" data-original="./res/img/kw.png" />
                 </div>
 
             </div>
@@ -1249,8 +1249,8 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="works.html">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a class="footer-active-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -1261,8 +1261,8 @@
                         <h2>Contact Info.</h2>
                         <ul>
                             <li>2355, Indira Maidan St, Nilakantha Nagar, Nayapalli, Bhubaneswar, Odisha 751015</li>
-                            <li>+ 91 70087 17359</li>
-                            <li>info@atreyaassociates.com</li>
+                            <li><a  href="tel:7008717359">+ 91 70087 17359</a></li>
+                            <li><a href="mailto:info@atreyaassociates.com">info@atreyaassociates.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1392,6 +1392,16 @@
                     }
                 },
                 {
+                    breakpoint: 834,
+                    settings: {
+                        //   arrows: false,
+                        centerMode: false,
+                        //   centerPadding: '40px',
+                        slidesToShow: 2,
+                        variableWidth: true,
+                    }
+                },
+                {
                     breakpoint: 480,
                     settings: {
                         //   arrows: false,
@@ -1423,6 +1433,29 @@
         });
     </script> -->
     <script src="./res/js/main.js"></script>
+
+    <!-- Footer Contact Form -->
+    <script>
+        $('#contact_form1').submit(function (e) {
+            e.preventDefault();
+            var frm = $("#contact_form1").serialize();
+            $.ajax({
+                type: 'post',
+                url: 'contact_form.php',
+                data: frm,
+                success: function (data) {
+                    if (data == 1) {
+                        //   window.location.href='enroll-success.html';
+                        window.alert('Message sent successfully');
+                    } else {
+                        //   window.location.href='index.html';
+                        window.alert('Someting went wrong, try to submit again');
+                    }
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
