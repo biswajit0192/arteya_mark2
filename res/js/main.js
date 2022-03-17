@@ -61,7 +61,7 @@ $(document).ready(function() {
                 var imgExisting = imagex.attr('src');
                 imagex.attr('src', imgOriginal);
                 imagex.data('original', imgExisting);
-                console.log(index);
+                // console.log(index);
             }
         });
     }, 1000);        

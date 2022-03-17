@@ -41,6 +41,23 @@ body {
 // }
 ////////// Testing Border ///////////
 
+#yellow-triangle,
+.yellow-triangle{
+  position: absolute;
+  z-index: -1;
+}
+#blue-circle,
+.blue-circle{
+  position: absolute;
+  z-index: -1;
+
+}
+#green-circle,
+.green-circle{
+  position: absolute;
+  z-index: -1;
+}
+
 .prime-container {
   padding: 0 35px;
 }
@@ -1166,7 +1183,9 @@ select {
   .testimonial-wrapper{
     .heading-wrap{
       .sub-heading{text-align: center;}
-      h2{text-align: center;}
+      h2{
+        text-align: center;
+      }
     }
 
     .testi-cards-wrapper{
@@ -1280,6 +1299,9 @@ select {
     justify-content: space-evenly;
     .logo-wraps {
       width: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         width: 40%;
         opacity: 0.17;
@@ -1300,6 +1322,19 @@ select {
 
 .about-top-sec{
   margin-bottom: $section-gap;
+
+  #yellow-triangle{
+    right: 150px;
+    bottom: 150px;
+  }
+  #blue-circle{
+    top: 200px;
+    left: 80px;
+  }
+  #green-circle{
+    right: 350px;
+    bottom: 120px;
+  }
 }
 .about-top-wrapper{
   display: grid;
@@ -1395,6 +1430,18 @@ select {
 
 .client-sec{
   margin-bottom: 170px;
+  position: relative;
+
+  .yellow-triangle{
+    bottom: 0;
+    left: -25px;
+  }
+  .blue-circle{
+    left: 40%;
+    top: 40px;
+  }
+  .green-circle{}
+
   .client-wrapper{
     display: grid;
     grid-template-columns: 40% 60%;
@@ -1406,12 +1453,15 @@ select {
     .client-logos-wrap{
       padding-left: 70px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       row-gap: 30px;
 
       .logo-wraps{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img{
-          width: 40%;
+          width: 50%;
         }
       }
     }
@@ -2417,6 +2467,16 @@ select {
   .cover-sec {
     .header {
       nav {
+        .logo-div{
+          .logo-wrapper{
+            svg{
+              width: 40px;
+            }
+            h2{
+              font-size: 24px;
+            }
+          }
+        }
         .menu-div {
           display: none;
         }
@@ -2598,8 +2658,8 @@ select {
           li {
             text-align: center;
             padding: 5px 0;
-            margin-bottom: 65px;
-            font-size: 2.1em;
+            margin-bottom: 50px;
+            font-size: 1.7em;
             font-weight: 600;
             a {
               color: $gray;
@@ -2910,6 +2970,7 @@ select {
 
       .client-logos-wrap{
         padding: 0;
+        grid-template-columns: 1fr 1fr 1fr;
 
         .logo-wraps{
           display: flex;
